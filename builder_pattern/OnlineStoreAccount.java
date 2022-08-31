@@ -19,35 +19,31 @@ public class OnlineStoreAccount {
 
         public Builder withName(String name) {
             this.name = name;
-
             return this;
         }
 
         public Builder withAddress(String address) {
             this.address = address;
-
             return this;
         }
 
         public Builder withBudget(Long budget) {
             this.budget = budget;
-
             return this;
         }
 
         public Builder withDiscount(Long discountRate) {
             this.discountRate = discountRate;
-
             return this;
         }
 
         public OnlineStoreAccount build() {
             OnlineStoreAccount onlineStoreAccount = new OnlineStoreAccount();
-            onlineStoreAccount.id = this.id;
-            onlineStoreAccount.name = this.name;
-            onlineStoreAccount.address = this.address;
-            onlineStoreAccount.budget = this.budget;
-            onlineStoreAccount.discountRate = this.discountRate;
+            onlineStoreAccount.id = id;
+            onlineStoreAccount.name = name;
+            onlineStoreAccount.address = address;
+            onlineStoreAccount.budget = budget;
+            onlineStoreAccount.discountRate = discountRate;
 
             return onlineStoreAccount;
         }

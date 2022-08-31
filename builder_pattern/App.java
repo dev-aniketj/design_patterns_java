@@ -7,6 +7,11 @@ public class App {
                 .withDiscount(2L)
                 .build();
 
+        System.out.println(johnSmith.getId());
         System.out.println(johnSmith.getName());
+        System.out.println(johnSmith.getAddress());
+        System.out.println(johnSmith.getBudget());
+        System.out.println(johnSmith.getDiscountRate());
+        System.out.println(johnSmith.getClass());
     }
 }
