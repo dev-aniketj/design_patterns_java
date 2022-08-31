@@ -12,6 +12,5 @@ public class App {
         System.out.println(johnSmith.getAddress());
         System.out.println(johnSmith.getBudget());
         System.out.println(johnSmith.getDiscountRate());
-        System.out.println(johnSmith.getClass());
     }
 }
