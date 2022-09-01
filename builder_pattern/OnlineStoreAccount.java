@@ -1,94 +1,94 @@
 public class OnlineStoreAccount {
 
+  private Long id;
+  private String name;
+  private String address;
+  private Long budget;
+  private Long discountRate;
+
+  public static class Builder {
+
     private Long id;
     private String name;
     private String address;
     private Long budget;
     private Long discountRate;
 
-    public static class Builder {
-        private Long id;
-        private String name;
-        private String address;
-        private Long budget;
-        private Long discountRate;
-
-        public Builder(Long id) {
-            this.id = id;
-        }
-
-        public Builder withName(String name) {
-            this.name = name;
-            return this;
-        }
-
-        public Builder withAddress(String address) {
-            this.address = address;
-            return this;
-        }
-
-        public Builder withBudget(Long budget) {
-            this.budget = budget;
-            return this;
-        }
-
-        public Builder withDiscount(Long discountRate) {
-            this.discountRate = discountRate;
-            return this;
-        }
-
-        public OnlineStoreAccount build() {
-            OnlineStoreAccount onlineStoreAccount = new OnlineStoreAccount();
-            onlineStoreAccount.id = id;
-            onlineStoreAccount.name = name;
-            onlineStoreAccount.address = address;
-            onlineStoreAccount.budget = budget;
-            onlineStoreAccount.discountRate = discountRate;
-
-            return onlineStoreAccount;
-        }
+    public Builder(Long id) {
+      this.id = id;
     }
 
-    private OnlineStoreAccount() {
+    public Builder withName(String name) {
+      this.name = name;
+      return this;
     }
 
-    public Long getId() {
-        return id;
+    public Builder withAddress(String address) {
+      this.address = address;
+      return this;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Builder withBudget(Long budget) {
+      this.budget = budget;
+      return this;
     }
 
-    public String getName() {
-        return name;
+    public Builder withDiscount(Long discountRate) {
+      this.discountRate = discountRate;
+      return this;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public OnlineStoreAccount build() {
+      OnlineStoreAccount onlineStoreAccount = new OnlineStoreAccount();
+      onlineStoreAccount.id = id;
+      onlineStoreAccount.name = name;
+      onlineStoreAccount.address = address;
+      onlineStoreAccount.budget = budget;
+      onlineStoreAccount.discountRate = discountRate;
 
-    public String getAddress() {
-        return address;
+      return onlineStoreAccount;
     }
+  }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+  private OnlineStoreAccount() {}
 
-    public Long getBudget() {
-        return budget;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public void setBudget(Long budget) {
-        this.budget = budget;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public Long getDiscountRate() {
-        return discountRate;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setDiscountRate(Long discountRate) {
-        this.discountRate = discountRate;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public Long getBudget() {
+    return budget;
+  }
+
+  public void setBudget(Long budget) {
+    this.budget = budget;
+  }
+
+  public Long getDiscountRate() {
+    return discountRate;
+  }
+
+  public void setDiscountRate(Long discountRate) {
+    this.discountRate = discountRate;
+  }
 }
