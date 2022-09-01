@@ -1,3 +1,4 @@
 public abstract class AbstractFactory {
-    abstract Computer getComputer(String computerType);
+
+  abstract Computer getComputer(String computerType);
 }
