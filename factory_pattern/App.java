@@ -1,7 +1,9 @@
 
 public class App {
     public static void main(String[] args) {
+        // create object of an factory
         ComputerFactory computerFactory = new ComputerFactory();
+
         Computer computer = computerFactory.getComputer("Laptop");
         computer.compute();
 
