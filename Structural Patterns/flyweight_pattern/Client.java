@@ -8,7 +8,7 @@ public class Client {
     inventoryBackend.takeOrder("Smart TV", 3);
     inventoryBackend.takeOrder("Iphone", 4);
     inventoryBackend.takeOrder("Laptop", 5);
-    inventoryBackend.takeOrder("Smart TV", 6);
+    inventoryBackend.takeOrder("TV", 6);
 
     inventoryBackend.process();
     System.out.println(inventoryBackend.report());
