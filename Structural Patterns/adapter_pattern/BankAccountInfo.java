@@ -1,6 +1,8 @@
+// Model interface
+
 public interface BankAccountInfo {
-    int getID();
-    String getName();
-    String getEmail();
-    Long getAmount();
+  int getID();
+  String getName();
+  String getEmail();
+  Long getAmount();
 }

@@ -16,5 +16,10 @@ public class App {
                 bankAccountAdapter.getName(), bankAccountAdapter.getEmail(), bankAccountAdapter.getAmount());
 
         accountCreationService.createAccount();
+        bankAccountAdapter.getID();
+        bankAccountAdapter.getName();
+        bankAccountAdapter.getEmail();
+        bankAccountAdapter.getAmount();
+
     }
 }
