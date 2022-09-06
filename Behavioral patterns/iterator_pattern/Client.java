@@ -13,10 +13,8 @@ public class Client {
       listOfEmployees
     );
 
-    for (
-      Iterator iterator = employeeDirectory.getIterator();
-      iterator.hasNext();
-    ) {
+    Iterator iterator = employeeDirectory.getIterator();
+    while (iterator.hasNext()) {
       System.out.println("Name of the employee is: " + iterator.next());
     }
   }
